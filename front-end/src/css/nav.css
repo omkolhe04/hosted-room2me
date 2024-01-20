@@ -1,0 +1,65 @@
+
+.navbar{
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1334px;
+    border-radius: 5px;
+    height: 253px;
+    background-size: cover;
+    margin: 65px 0px 0px 93px;
+    z-index: -1;
+    border: 3px solid #d4d4d4;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 13px 270px;
+    margin: 0px;
+
+}
+
+.nav-link{
+    font-family: 'Philosopher', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 1px 2px black;
+    padding: 4px 13px;
+    border-radius: 31px;
+    box-shadow: 0px 0px 28px 2px #92b2ce;}
+
+.dark-mode{
+    
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+}
+.dark-mode p{
+    font-family: 'Philosopher', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 2px 1px 2px black;
+    padding: 4px 13px;
+    border-radius: 31px;
+    box-shadow: 0px 0px 28px 2px #92b2ce;
+}
+
+.img-button{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15px 121px 15px;
+}

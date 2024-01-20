@@ -1,0 +1,61 @@
+.profile{
+    max-width: 1018px;
+    margin: 10px auto;
+}
+
+.profile-frame{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-pic{
+    height: fit-content;
+}
+
+.change-profile {
+    left: 81vh;
+    background-color: #41056c;
+    padding: 4px;
+    color: white;
+    border-radius: 28px;
+    position: fixed;
+    top: 20vh;
+    cursor: pointer;
+}
+
+.profile-pic>img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    box-shadow: 0px 0px 26px -7px #58e9f8;
+    border: 5px solid #620c66;
+    border-radius: 100px;
+}  
+
+.profile-data{
+    text-align: left;
+}
+
+.profile-info{
+    padding: opx 5px;
+}
+
+.hr-tag{
+    width: 90%;
+    opacity: 0.8;
+    margin: 20px 77px;
+}
+
+#delete-btn{
+    width: 136px;
+    padding: 1px 10px;
+    background-color: #ee000069;
+}
+
+.no-rooms-message {
+    display: flex;
+    justify-content: center;
+    margin: 83px;
+    border: 1px solid #89d3fe47;
+    width: 57vw;
+}
