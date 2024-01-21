@@ -5,8 +5,8 @@ const cors = require("cors");
 const port = process.env.port || 5000;
 const path = require("path")
 
-// mongoose.connect('mongodb://127.0.0.1:27017/e-comm')
-mongoose.connect('mongodb+srv://omkolhe12:sangita@12@cluster0.mongodb.net/room2me', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://127.0.0.1:27017/e-comm')
+// mongoose.connect('mongodb+srv://omkolhe12:sangita@12@cluster0.mongodb.net/room2me', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const authRoutes = require('./routes/authRoutes');
 const roomRoutes = require('./routes/roomRoutes');
