@@ -79,3 +79,44 @@
     margin-left: 15px;
     filter: drop-shadow(1px 1px 3px rgb(103, 225, 255));
 }
+
+@media (max-width:450px) {
+    .logo-img{
+        height: 20px;
+        margin-left: 10px;
+    }
+    .my-btn{
+        padding: 4px 4px;
+    border-radius: 54px;
+    font-size: 11px;
+    }
+    .material-symbols-outlined {
+        font-size:16px;
+    }
+    .header{
+        height: 40px;
+    }
+    
+}
+@media (max-width:350px) {
+    .logo-img{
+        height: 15px;
+        margin-left: 0px;
+    }
+    .my-btn{
+        padding: 4px 3px;
+    border-radius: 54px;
+    font-size: 8px;
+    height: 10px;
+    }
+    .material-symbols-outlined {
+        font-size:12px;
+    }
+    .header{
+        height: 30px;
+    }
+    .logout-btn{
+        padding: 1px 11px;
+        font-size: 8px;
+    }
+}

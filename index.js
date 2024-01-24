@@ -7,7 +7,11 @@ const path = require("path")
 
 // mongoose.connect('mongodb://127.0.0.1:27017/e-comm')
 mongoose.connect("mongodb+srv://omkolhe12:sangita12@room2me.fffzgcd.mongodb.net/?retryWrites=true&w=majority");
+<<<<<<< HEAD
 // mongoose.connect('mongodb+srv://omkolhe12:sangita@12@cluster0.mongodb.net/room2me', { useNewUrlParser: true, useUnifiedTopology: true });
+=======
+
+>>>>>>> 93cac9f (first responsive)
 
 const authRoutes = require('./routes/authRoutes');
 const roomRoutes = require('./routes/roomRoutes');

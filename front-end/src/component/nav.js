@@ -52,7 +52,7 @@ function Nav() {
               }
             }}
           >
-            PREV
+            &lt;&lt;
           </button>
           <button 
             onClick={() => {
@@ -61,7 +61,7 @@ function Nav() {
               }
             }}
           >
-            NEXT
+            &gt;&gt;
           </button>
       </div>
     </div>
