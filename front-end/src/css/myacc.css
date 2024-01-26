@@ -24,8 +24,8 @@
 }
 
 .profile-pic>img {
-    width: 160px;
-    height: 160px;
+    width: 10.5vw;
+    height: 10.5vw;
     object-fit: contain;
     box-shadow: 0px 0px 26px -7px #58e9f8;
     border: 5px solid #620c66;
@@ -35,13 +35,20 @@
 .profile-data{
     text-align: left;
 }
-
+.profile-data>h1{
+    font-size: 2.2vw;
+}
 .profile-info{
-    padding: opx 5px;
+    padding: 0px 5px;
+}
+.profile-info>p{
+    font-size: 1.2vw;
+}
+.title-h2{
+    font-size: 1.55vw;
 }
 
 .hr-tag{
-    width: 90%;
     opacity: 0.8;
     margin: 20px 77px;
 }
@@ -55,7 +62,31 @@
 .no-rooms-message {
     display: flex;
     justify-content: center;
-    margin: 83px;
+    margin: 5.4vw;
     border: 1px solid #89d3fe47;
     width: 57vw;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:600px){
+    .profile-pic>img{
+        width: 13vw;
+        height: 13vw;
+    }
+    .profile-data>h1{
+        font-size: 4vw;
+        margin: 0px;
+    }
+    .profile-info>p{
+        font-size: 2.3vw;
+    }
+    .title-h2{
+        font-size: 2.7vw;
+    }
+    .no-rooms-message{
+        font-size: 2.4vw;
+    }
 }
