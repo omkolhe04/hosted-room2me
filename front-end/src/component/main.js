@@ -92,7 +92,7 @@ const Main = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        const response = await fetch("/allrooms", {
+        const response = await fetch("http://localhost:5000/allrooms", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -124,7 +124,7 @@ const Main = () => {
 
   //FUNCTION FOR FETCH WISH API ---------------------
   const likePost = (id) => {
-    const responce = fetch("/wish", {
+    const responce = fetch("http://localhost:5000/wish", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -150,7 +150,7 @@ const Main = () => {
 
   //FUNCTION FOR FETCHING UNWISH API---------------------
   const unlikePost = (id) => {
-    fetch("/unwish", {
+    fetch("http://localhost:5000/unwish", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -236,7 +236,7 @@ const Main = () => {
                   </div>
                   <div className="user-detail">
                     <h5>{rooms.postedBy.name}</h5>
-                    <h5>- {rooms.postedBy._id}</h5>
+                    <h5>- {rooms.city}</h5>
                   </div>
                   <Link className="post-button" id="profile" to={`/profile/${rooms.postedBy._id}`}><span class="material-symbols-outlined">
 account_circle
@@ -274,7 +274,7 @@ expand_circle_right
                     )}
                   </div>
                   <div className="post-content">
-                    <h5 style={{ fontSize: "18px", margin: "7px 0px" }}>
+                    <h5 style={{ fontSize: "1.2vw", margin: "7px 0px", }}>
                       - {rooms.roomType} on {rooms.roomFloor}
                     </h5>
                     <p>
@@ -302,7 +302,7 @@ expand_circle_right
         </div>
         <div>
           <div className="filter">
-          <h2 style={{fontFamily: 'Philosopher'}}>-- Apply Room Filter --</h2>
+          <h2 style={{fontFamily: 'Philosopher', margin:'2.8vh'}}>-- Apply Room Filter --</h2>
             <label><p>Room Type:</p><select name="roomType" onChange={handleFilterChange} value={filters.roomType}>
                 <option value="">All</option>
                 {getUniqueValues("roomType").map((value) => (

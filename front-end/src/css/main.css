@@ -1,95 +1,99 @@
- body{
-    /* background: linear-gradient(to left top,#5680e9, #84ceeb,#8860d0, #5ab9ea, #c1c8e4,rgb(240, 129, 255), rgb(80, 229, 239)); */
-    backdrop-filter: blur(40rem);
-    background: #dae5ff;
-    width: 100vw;
-    height: 100%;
-
- }
+ 
+ 
  .wrapper{
     display: flex;
  }
 
  
  .main{
-     width: 100vw;
+     width: 66.41vw;
     }
     
     .post{
         border: 3px solid #d4d4d4;
         border-radius: 5px;
         max-width: 900px;
-        height: 250px;
+        height: 18vw;
         background: rgba(0, 0, 0, 0.135);
         
-        margin: 30px 25px 0px 90px 
+        margin: 30px 1.64vw 0px 5.9vw; 
         
     }
     .post:hover{
         transition: box-shadow 1s ease;
-    /* box-shadow: 0px 0px 55px -22px purple; */
-    box-shadow: 0px 0px 55px -22px rgb(50, 6, 50);
-    background-color: rgba(255, 255, 255, 0.411);
+        box-shadow: 0px 0px 55px -22px rgb(50, 6, 50);
+        background-color: rgba(255, 255, 255, 0.411);
 
 }
 
 
 .post-header{
     display: flex;
+    height: 3.28vw;
 }
 .post-pic img{
-    width: 35px;
+    width: 2.28vw;
     border-radius: 300px;
     height: auto;
-    margin: 0px 0px 0px 13px;
+    margin: 0px 0px 0px 0.84vw;
     object-fit: contain;
-    padding: 5px;
+    padding: 0.32vw;
+}
+.post-content>p{
+    font-size: 1.02vw;
 }
 .user-detail{
     /* padding-right: 200px; */
     display: flex;
-    height: 42px;
+    height: 2.73vw;
     align-items: center;
-    width: 437px;
+    width: 28.46vw;
     
     
 }
 .user-detail > h5{
     margin: 4px 0px 0px 0px;
     padding: 11px;
+    font-size: 1.1vw;
     align-items: center;
 }
 .post-button{
     border: 1px solid black;
-    margin: 10px 10px 1px 5px;
+    margin: 0.65vw 0.65vw 1px 0.32vw;
     padding-top: 4px;
     width: 95px;
-    height: 25px;
+    height: 1.6vw;
     text-decoration: none;
     border-radius: 30px;
     text-align: center;
     font-family: 'Philosopher', sans-serif;
     cursor: pointer;
     align-items: center;
-    padding: 1px 24px;
+    padding: 1px 1.56vw;
     border-radius: 27px;
     display: flex;
     
 }
 #whatsapp{
-    width: 95px;
-    padding: 1px 24px;
+    width: 6.5vw;
+    padding: 1px 1.56vw;
     background-color: #09ff0033;
+    font-size: 1.1vw;
 }
 #more{
     width: 95px;
-    padding: 1px 15px;
+    padding: 1px 1vw;
     background-color: #ff000033;
+    font-size: 1.1vw
 }
 #profile{
-    width: 95px;
-    padding: 1px 15px;
+    width: 5.5vw;
+    padding: 1px 1vw;
     background-color: #00ff9724;
+    font-size: 1.1vw;
+}
+.post-button>span{
+    font-size: 1.6vw;
 }
 
 .whats-btn{
@@ -102,9 +106,10 @@
     /* color: white; */
 }
 .addtowish{
-    height: 35px;
+    height: 2.28vw;
     cursor: pointer;
-    margin: 14px 9px 1px 5px;
+    margin: 0.91vw 0.58vw 1px 0.32vw;
+    font-size: 1.6vw;
 }
 
 .image-content{
@@ -112,13 +117,14 @@
 }
 
 .post-image img{
-    width: 395px;                                                                    
+    width: 25.72vw;                                                                    
     border-radius: 7px;
     margin: 0px 18px 20px 17px;
-    height: 185px;
+    height: 13.5vw;
 }
 .addtowish-red{
     color: red;
+    font-size: 1.6vw;
     font-variation-settings:
     'FILL' 1,
     'wght' 400,
@@ -291,11 +297,11 @@
     
     
     .filter{
-        height: 679px;
+        height: 93.2vh;
     position: sticky;
-    top: 25px;
-    margin: 30px 90px 0px 25px;
-    width: 380px;
+    top: 30px;
+    margin: 30px 5.9vw 0px 1.64vw;
+    width: 24.8vw;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.135);
     border: 3px solid #d4d4d4;
@@ -306,13 +312,14 @@
     .filter>label{
         display: flex;
         flex-direction: row;
+        height: 7.4vh;
     }
     .filter>label:hover{
         text-shadow: 0px 0px 3px #f7fbff;
 
     }
     .filter>label>p{
-        width: 130px;
+        width: 8.46vw;
         font-family: 'Philosopher', sans-serif;
     }
     .filter>label>select{
@@ -321,8 +328,8 @@
     border-radius: 10px;
     padding: 0px 7px;
     margin: 12px auto;
-    height: 29px;
-    font-size: 15px;
+    height: 1.9vw;
+    font-size: 1vw;
 }
 .filter>label>select:hover{
     box-shadow: 0px 0px 3px 3px #3488d496;
@@ -330,8 +337,8 @@
 
 .reset-btn{
     align-items: center;
-    margin: 13px 8px;
-    padding: 1px 24px;
+    margin: 0.83vw 0.52vw;
+    padding: 1px 1.56vw;
     border-radius: 27px;
     background-color: #ff000030;
     display: flex;
@@ -342,3 +349,46 @@
     display: flex;
     margin: 163px;
 }
+
+
+.filter>h2{
+    font-size: 1.6vw;
+}
+@media (max-width:1280px) {
+    .post{
+        height: 18vw;
+    }
+    .filter>label>p{
+        width: 10vw;
+        font-size: 1.31vw;
+    }
+    .filter>label>select{
+        width: 12vw;
+    }
+    .post-button{
+        height: 1.5vw;
+    }
+    #profile{
+        width: 5vw;
+    }
+    
+}
+@media (max-width:1000px){
+    .post{
+        height: 19vw;
+    }
+    .post-button{
+        height: 1.4vw;
+    }
+}
+@media (max-width:900px){
+    .post{
+        height: 19vw;
+    }
+}
+
+
+
+
+
+

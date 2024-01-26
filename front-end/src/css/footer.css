@@ -11,8 +11,7 @@ body{
     font-family: 'Play', sans-serif;
     text-align:center;
     width: 100%;
-    position: fixed;
-    top: 82vh;
+
     }
     
     .footer .row{
@@ -48,7 +47,7 @@ body{
     font-size:2em;
     margin:0% 1%;
     }
-    .fa{
+    .fa1 {
         width: 45px;
         height: 45px;
         margin:0px 4vw;
@@ -65,7 +64,7 @@ body{
             text-align:center;
         }
     
-    .fa{
+    .fa1{
         width: 6.6vw;
         height: 6.6vw;
     }

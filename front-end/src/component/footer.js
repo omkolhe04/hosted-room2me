@@ -13,16 +13,16 @@ const Footer = () => {
         <div class="footer">
           <div class="row fa-row">
             <a href="facebook.com">
-                <img class="fa fa-facebook" src={fblogo} alt="FACEBOOK" />
+                <img class="fa1 fa-facebook" src={fblogo} alt="FACEBOOK" />
             </a>
             <a href="instagram.com">
-            <img class="fa fa-instagram" src={instalogo} alt="INSTAGRAM" />
+            <img class="fa1 fa-instagram" src={instalogo} alt="INSTAGRAM" />
             </a>
             <a href="youtube,,com">
-            <img class="fa fa-youtube" src={twitlogo} alt="YOUTUBE" />
+            <img class="fa1 fa-youtube" src={twitlogo} alt="YOUTUBE" />
             </a>
             <a href="twitter.com">
-            <img class="fa fa-twitter" src={ytlogo} alt="TWITTER" />
+            <img class="fa1 fa-twitter" src={ytlogo} alt="TWITTER" />
             </a>
           </div>
 
