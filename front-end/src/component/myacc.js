@@ -8,8 +8,6 @@ import { useNavigate } from "react-router-dom";
 
 const Myacc = () => {
   const hiddenFileInput = useRef(null);
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [changePic, setChangePic] = useState(false)
   const [myroom, setMyroom] = useState([]);
   const [show, setShow] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -66,7 +64,7 @@ const Myacc = () => {
   }, [show]);
 
     useEffect(() => {
-                fetch('/myrooms', {
+                fetch('http://localhost:5000/myrooms', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -81,7 +79,7 @@ const Myacc = () => {
     const removeRoom=(roomId)=>{
       if(window.confirm("Do you want to delete the Room ?")){
 
-        fetch(`/deleteRoom/${roomId}`, {
+        fetch(`http://localhost:5000/deleteRoom/${roomId}`, {
           method:"delete",
           headers: {
               Authorization: `Bearer ${token}`
@@ -107,8 +105,6 @@ const Myacc = () => {
         <div className="profile-frame">
           <div className="profile-pic">
             <img src={postpic} alt="" />
-            <span onClick={handleClick} class="material-symbols-outlined change-profile">add_photo_alternate</span>
-            <input type="file" ref={hiddenFileInput} accept="image/*" style={{display:"none"}}  />
           </div>
           <div className="profile-data">
             <h1>{JSON.parse(localStorage.getItem("user")).name}</h1>
@@ -119,7 +115,7 @@ const Myacc = () => {
           </div>
         </div>
           <hr className="hr-tag" />
-          <h2 style={{textAlign:"center"}}>-- YOUR UPLOADED ROOMS --</h2>
+          <h2 className="title-h2" style={{textAlign:"center"}}>-- YOUR UPLOADED ROOMS --</h2>
         <div className="gallery">
         {myroom.length === 0 ? (
           <div className="no-rooms-message">
