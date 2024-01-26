@@ -11,7 +11,7 @@ const Footer = () => {
     <div>
       <footer>
         <div class="footer">
-          <div class="row">
+          <div class="row fa-row">
             <a href="facebook.com">
                 <img class="fa fa-facebook" src={fblogo} alt="FACEBOOK" />
             </a>
@@ -46,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div class="row">
+          <div class="row end-row" >
             ROOM2ME Copyright © 2024 Room2Me - All rights reserved || Designed
             By: Om Kolhe
           </div>
