@@ -92,7 +92,7 @@ const Main = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        const response = await fetch("http://localhost:5000/allrooms", {
+        const response = await fetch("/allrooms", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -124,7 +124,7 @@ const Main = () => {
 
   //FUNCTION FOR FETCH WISH API ---------------------
   const likePost = (id) => {
-    const responce = fetch("http://localhost:5000/wish", {
+    const responce = fetch("/wish", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -150,7 +150,7 @@ const Main = () => {
 
   //FUNCTION FOR FETCHING UNWISH API---------------------
   const unlikePost = (id) => {
-    fetch("http://localhost:5000/unwish", {
+    fetch("/unwish", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
