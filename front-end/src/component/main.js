@@ -238,13 +238,9 @@ const Main = () => {
                     <h5>{rooms.postedBy.name}</h5>
                     <h5>- {rooms.city}</h5>
                   </div>
-                  <Link className="post-button" id="profile" to={`/profile/${rooms.postedBy._id}`}><span class="material-symbols-outlined">
-account_circle
-</span>Profile</Link>
+                  <Link className="post-button" id="profile" to={`/profile/${rooms.postedBy._id}`}><span class="material-symbols-outlined">account_circle</span>Profile</Link>
                   <a className="post-button" id="whatsapp" onClick={handleButtonClick}><span class="fa fa-whatsapp whats-btn"></span><p></p>WhatsApp</a>
-                  <a className="post-button" id="more" onClick={() => {toggleMore(rooms);}}><span class="material-symbols-outlined">
-expand_circle_right
-</span>More...</a>
+                  <a className="post-button" id="more" onClick={() => {toggleMore(rooms);}}><span class="material-symbols-outlined">expand_circle_right</span>More...</a>
                   {rooms.wishlist.includes(
                     JSON.parse(localStorage.getItem("user"))?.["_id"]
                   ) ? (
@@ -274,7 +270,7 @@ expand_circle_right
                     )}
                   </div>
                   <div className="post-content">
-                    <h5 style={{ fontSize: "1.2vw", margin: "7px 0px", }}>
+                    <h5 >
                       - {rooms.roomType} on {rooms.roomFloor}
                     </h5>
                     <p>

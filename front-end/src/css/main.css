@@ -16,7 +16,7 @@
         height: 18vw;
         background: rgba(0, 0, 0, 0.135);
         
-        margin: 30px 1.64vw 0px 5.9vw; 
+        margin: 2vw 1.64vw 0px 5.9vw; 
         
     }
     .post:hover{
@@ -42,17 +42,18 @@
 .post-content>p{
     font-size: 1.02vw;
 }
+.post-content>h5{
+    font-size: 1.2vw;
+    margin: 7px 0px;
+}
 .user-detail{
-    /* padding-right: 200px; */
     display: flex;
-    height: 2.73vw;
     align-items: center;
     width: 28.46vw;
     
     
 }
 .user-detail > h5{
-    margin: 4px 0px 0px 0px;
     padding: 11px;
     font-size: 1.1vw;
     align-items: center;
@@ -387,7 +388,102 @@
     }
 }
 
+@media (max-width:600px){
+    .filter{
+        display: none;
+    }
+    .main{
+        width: 95vw;
+    }
+    .post-header{
+        height: 4vw;
+    }
+    .post-pic img{
+        width: 4vw;
+        margin: 0px 0px 0px 2vw;
+        padding: 1vw;
+    }
+    .user-detail > h5{
+        padding: 11px;
+        font-size: 2.5vw;
+    }
+    .user-detail{
+        display: flex;
+        align-items: center;
+        width: 59.46vw;
+        height: 6vw;
+    }
+    .post-content>p{
+        font-size: 2.3vw;
+    }  
+    .post-content>h5{
+        font-size: 2.3vw;
+        margin: -1px 0px;
+    }  
+    #whatsapp{
+        width: 2.9vw;
+        height: 2.6vw;
+        font-size: 0px;
+    }
+    #more{
+        width: 2.9vw;
+        height: 2.6vw;
+        font-size: 0px;
+    }
+    #profile{
+        width: 2.9vw;
+        height: 2.6vw;
+        font-size: 0px;
+    }
 
+    .post-button>span{
+        font-size: 3vw;
+    }
+    
+    .whats-btn{
+        height: 3vw;
+        font-size: 25px;
+    }
+    .post-button:hover{
+        background: #6f99fbc4;
+        color: rgb(147, 95, 95);
+        /* color: white; */
+    }
+    .addtowish{
+        height: 2.28vw;
+        cursor: pointer;
+        margin: 0.4vw 0.58vw 1px 0.32vw;
+        font-size: 4.5vw;
+    }
+    
+    .image-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .post{
+        height: 75vw;
+    }
+
+    .post-content{
+        margin: 0px 9px;
+    }
+    
+    .post-image img{
+        width: 83vw;                                                                    
+        border-radius: 7px;
+        margin: 8px 6px 0px 6px;
+        height: 42vw;
+    }
+    .addtowish-red{
+        color: red;
+        font-size: 4.5vw;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+}
 
 
 
