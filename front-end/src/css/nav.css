@@ -67,7 +67,7 @@
 
 @media (max-width:600px) {
     .nav-list{
-        padding: 13px 2vw;
+        padding: 13px 2vw 11vw;
     }
     .nav-link{
         font-size: 2.4vw;
@@ -81,9 +81,19 @@
 
     }
     .bg-image{
-        height: 20vw;
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    border-radius: 5px;
+    height: 23vw;
+    background-size: cover;
+    margin: 14vw 0vw 0px 0vw;
+    z-index: -1;
+    border: none;
     }
     .img-button{
+        display: none;
         padding: 0vw 1vw 8vw 1vw;
     }
     

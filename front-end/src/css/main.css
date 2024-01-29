@@ -1,37 +1,40 @@
- 
- 
- .wrapper{
+.wrapper {
     display: flex;
- }
-
- 
- .main{
-     width: 66.41vw;
-    }
-    
-    .post{
-        border: 3px solid #d4d4d4;
-        border-radius: 5px;
-        max-width: 900px;
-        height: 18vw;
-        background: rgba(0, 0, 0, 0.135);
-        
-        margin: 2vw 1.64vw 0px 5.9vw; 
-        
-    }
-    .post:hover{
-        transition: box-shadow 1s ease;
-        box-shadow: 0px 0px 55px -22px rgb(50, 6, 50);
-        background-color: rgba(255, 255, 255, 0.411);
-
 }
 
 
-.post-header{
+.main {
+    width: 66.41vw;
+}
+
+.post {
+    border: 3px solid #d4d4d4;
+    border-radius: 5px;
+    max-width: 900px;
+    height: 18vw;
+    background: rgba(0, 0, 0, 0.135);
+
+    margin: 2vw 1.64vw 0px 5.9vw;
+
+}
+
+.post:hover {
+    transition: box-shadow 1s ease;
+    box-shadow: 0px 0px 55px -22px rgb(50, 6, 50);
+    background-color: rgba(255, 255, 255, 0.411);
+
+}
+
+.fil-btn {
+    display: none;
+}
+
+.post-header {
     display: flex;
     height: 3.28vw;
 }
-.post-pic img{
+
+.post-pic img {
     width: 2.28vw;
     border-radius: 300px;
     height: auto;
@@ -39,26 +42,31 @@
     object-fit: contain;
     padding: 0.32vw;
 }
-.post-content>p{
+
+.post-content>p {
     font-size: 1.02vw;
 }
-.post-content>h5{
+
+.post-content>h5 {
     font-size: 1.2vw;
     margin: 7px 0px;
 }
-.user-detail{
+
+.user-detail {
     display: flex;
     align-items: center;
     width: 28.46vw;
-    
-    
+
+
 }
-.user-detail > h5{
+
+.user-detail>h5 {
     padding: 11px;
     font-size: 1.1vw;
     align-items: center;
 }
-.post-button{
+
+.post-button {
     border: 1px solid black;
     margin: 0.65vw 0.65vw 1px 0.32vw;
     padding-top: 4px;
@@ -73,79 +81,86 @@
     padding: 1px 1.56vw;
     border-radius: 27px;
     display: flex;
-    
+
 }
-#whatsapp{
+
+#whatsapp {
     width: 6.5vw;
     padding: 1px 1.56vw;
     background-color: #09ff0033;
     font-size: 1.1vw;
 }
-#more{
+
+#more {
     width: 95px;
     padding: 1px 1vw;
     background-color: #ff000033;
     font-size: 1.1vw
 }
-#profile{
+
+#profile {
     width: 5.5vw;
     padding: 1px 1vw;
     background-color: #00ff9724;
     font-size: 1.1vw;
 }
-.post-button>span{
+
+.post-button>span {
     font-size: 1.6vw;
 }
 
-.whats-btn{
+.whats-btn {
     height: 27px;
     font-size: 25px;
 }
-.post-button:hover{
+
+.post-button:hover {
     background: #6f99fbc4;
     color: rgb(147, 95, 95);
     /* color: white; */
 }
-.addtowish{
+
+.addtowish {
     height: 2.28vw;
     cursor: pointer;
     margin: 0.91vw 0.58vw 1px 0.32vw;
     font-size: 1.6vw;
 }
 
-.image-content{
+.image-content {
     display: flex;
 }
 
-.post-image img{
-    width: 25.72vw;                                                                    
+.post-image img {
+    width: 25.72vw;
     border-radius: 7px;
     margin: 0px 18px 20px 17px;
     height: 13.5vw;
 }
-.addtowish-red{
+
+.addtowish-red {
     color: red;
     font-size: 1.6vw;
     font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 
 
 
-.more-section{
+.more-section {
     width: 100vw;
     min-height: 100vh;
     position: fixed;
     background-color: rgba(16, 13, 13, 0.162);
     backdrop-filter: blur(10rem);
-    
+
 }
 
-.close-more{
+.close-more {
     position: fixed;
     margin: 18px 0px 0px 0px;
     right: 2%;
@@ -161,7 +176,7 @@
     transform: rotate(180deg);
 }
 
-.container{
+.container {
     width: 87vw;
     position: fixed;
     left: 6vw;
@@ -170,73 +185,84 @@
     background-color: #011a288f;
     box-shadow: 0px 0px 10px 7px #011a28;
 }
-.img-user{
+
+.img-user {
     display: flex;
     flex-direction: row;
 }
-.all-image{
+
+.all-image {
     /* border: 2px solid red; */
     margin: 30px 15px 15px 30px;
-    
+
 }
-.image-slider>img{
+
+.image-slider>img {
     height: 56vh;
     width: 55vw;
 }
 
-.user-info{
+.user-info {
     /* border: 2px solid green; */
     margin: 30px 30px 15px 15px;
     width: 26vw;
     display: flex;
     justify-content: center;
-    
+
 }
-.user{
+
+.user {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
 }
-.user>img{
+
+.user>img {
     width: 154px;
     border-radius: 60px;
 }
-.more-btn{
-    display:flex;
-    flex-direction:row;
+
+.more-btn {
+    display: flex;
+    flex-direction: row;
     color: white;
 }
-.more-btn>a{
+
+.more-btn>a {
     color: wheat;
 }
-.more-rent{
+
+.more-rent {
     color: #b7ffa4;
     box-shadow: 0px 0px 6px -1px #00ff3b;
     background-color: #15181f99;
     padding: 6px 10px;
     border-radius: 7px;
 }
-.room-info{
+
+.room-info {
     margin: 15px 30px 30px 30px;
     height: 20vh;
     width: 55vw;
 }
-.room-info>p{
+
+.room-info>p {
     margin: 10px;
     color: white;
     font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     text-shadow: 0px 0px 5px #1f60ff;
-    
+
 }
-.room-info>div>p{
+
+.room-info>div>p {
     margin: 10px 10px 0px 10px;
     color: white;
     font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     text-shadow: 0px 0px 5px #1f60ff;
 }
@@ -245,7 +271,8 @@
     width: 26vw;
     height: 22vh;
 }
-.fav-btn>p{
+
+.fav-btn>p {
     margin: 8px 97px 42px 97px;
     border-radius: 0px 100px 100px 0px;
     color: #ffb3f9;
@@ -255,6 +282,7 @@
     box-shadow: 0px 0px 4px 2px #cb29d3a1;
     padding: 10px 2px;
 }
+
 .no-scroll {
     overflow: hidden;
 }
@@ -271,34 +299,34 @@
     width: 100%;
     overflow: hidden;
 }
-  
-  .image-slider img {
-      
-      transition: transform 0.3s ease;
-    }
-    
-    .slider-nav {
-        position: absolute;
-        top: 50%;
-        width: 97%;
-        display: flex;
-        margin: 12px;
-        justify-content: space-between;
-        transform: translateY(-50%);
-    }
-    
-    .slider-btn {
-        font-size: 24px;
-        color: white;
-        background-color: rgb(7 93 143 / 29%);
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 30px;
-    }
-    
-    
-    .filter{
-        height: 93.2vh;
+
+.image-slider img {
+
+    transition: transform 0.3s ease;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 97%;
+    display: flex;
+    margin: 12px;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-btn {
+    font-size: 24px;
+    color: white;
+    background-color: rgb(7 93 143 / 29%);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+.filter {
+    height: 93.2vh;
     position: sticky;
     top: 30px;
     margin: 30px 5.9vw 0px 1.64vw;
@@ -309,22 +337,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-    .filter>label{
-        display: flex;
-        flex-direction: row;
-        height: 7.4vh;
-    }
-    .filter>label:hover{
-        text-shadow: 0px 0px 3px #f7fbff;
+}
 
-    }
-    .filter>label>p{
-        width: 8.46vw;
-        font-family: 'Philosopher', sans-serif;
-    }
-    .filter>label>select{
-        width: 180px;
+.filter>label {
+    display: flex;
+    flex-direction: row;
+    height: 7.4vh;
+}
+
+.filter>label:hover {
+    text-shadow: 0px 0px 3px #f7fbff;
+
+}
+
+.filter>label>p {
+    width: 8.46vw;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.filter>label>select {
+    width: 180px;
     background-color: #be61ff54;
     border-radius: 10px;
     padding: 0px 7px;
@@ -332,11 +364,12 @@
     height: 1.9vw;
     font-size: 1vw;
 }
-.filter>label>select:hover{
+
+.filter>label>select:hover {
     box-shadow: 0px 0px 3px 3px #3488d496;
 }
 
-.reset-btn{
+.reset-btn {
     align-items: center;
     margin: 0.83vw 0.52vw;
     padding: 1px 1.56vw;
@@ -352,139 +385,203 @@
 }
 
 
-.filter>h2{
+.filter>h2 {
     font-size: 1.6vw;
 }
+
 @media (max-width:1280px) {
-    .post{
+    .post {
         height: 18vw;
     }
-    .filter>label>p{
+
+    .filter>label>p {
         width: 10vw;
         font-size: 1.31vw;
     }
-    .filter>label>select{
+
+    .filter>label>select {
         width: 12vw;
     }
-    .post-button{
+
+    .post-button {
         height: 1.5vw;
     }
-    #profile{
+
+    #profile {
         width: 5vw;
     }
-    
+
 }
-@media (max-width:1000px){
-    .post{
+
+@media (max-width:1000px) {
+    .post {
         height: 19vw;
     }
-    .post-button{
+
+    .post-button {
         height: 1.4vw;
     }
 }
-@media (max-width:900px){
-    .post{
+
+@media (max-width:900px) {
+    .post {
         height: 19vw;
     }
 }
 
-@media (max-width:600px){
-    .filter{
+@media (max-width:600px) {
+    .filter {
         display: none;
     }
-    .main{
+
+    .filter.visible {
+        height: 90.5vh;
+        margin: 72px 3vw 0px 3vw;
+        width: 73.5vw;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.742);
+        border: 3px solid #d4d4d4;
+        display: flex;
+        position: fixed;
+        left: 31px;
+        padding: 0px 4vw;
+        align-items: center;
+    }
+
+    .main {
         width: 95vw;
     }
-    .post-header{
+
+    .post-header {
         height: 4vw;
     }
-    .post-pic img{
+
+    .post-pic img {
         width: 4vw;
         margin: 0px 0px 0px 2vw;
         padding: 1vw;
     }
-    .user-detail > h5{
+
+    .user-detail>h5 {
         padding: 11px;
         font-size: 2.5vw;
     }
-    .user-detail{
+
+    .user-detail {
         display: flex;
         align-items: center;
         width: 59.46vw;
         height: 6vw;
     }
-    .post-content>p{
+
+    .post-content>p {
         font-size: 2.3vw;
-    }  
-    .post-content>h5{
+    }
+
+    .post-content>h5 {
         font-size: 2.3vw;
         margin: -1px 0px;
-    }  
-    #whatsapp{
-        width: 2.9vw;
-        height: 2.6vw;
-        font-size: 0px;
     }
-    #more{
-        width: 2.9vw;
-        height: 2.6vw;
-        font-size: 0px;
-    }
-    #profile{
+
+    #whatsapp {
         width: 2.9vw;
         height: 2.6vw;
         font-size: 0px;
     }
 
-    .post-button>span{
+    #more {
+        width: 2.9vw;
+        height: 2.6vw;
+        font-size: 0px;
+    }
+
+    #profile {
+        width: 2.9vw;
+        height: 2.6vw;
+        font-size: 0px;
+    }
+
+    .post-button>span {
         font-size: 3vw;
     }
-    
-    .whats-btn{
+
+    .whats-btn {
         height: 3vw;
         font-size: 25px;
     }
-    .post-button:hover{
-        background: #6f99fbc4;
-        color: rgb(147, 95, 95);
-        /* color: white; */
-    }
-    .addtowish{
+
+    .addtowish {
         height: 2.28vw;
-        cursor: pointer;
         margin: 0.4vw 0.58vw 1px 0.32vw;
         font-size: 4.5vw;
     }
-    
-    .image-content{
+
+    .image-content {
         display: flex;
         flex-direction: column;
     }
-    .post{
+
+    .post {
         height: 75vw;
     }
 
-    .post-content{
+    .post-content {
         margin: 0px 9px;
     }
-    
-    .post-image img{
-        width: 83vw;                                                                    
-        border-radius: 7px;
+
+    .post-image img {
+        width: 83vw;
         margin: 8px 6px 0px 6px;
         height: 42vw;
     }
-    .addtowish-red{
-        color: red;
+
+    .addtowish-red {
         font-size: 4.5vw;
-        font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
+    }
+
+    .fil-btn {
+        display: block;
+        position: sticky;
+        top: 58vw;
+        border: 0px;
+        box-shadow: 0px 0px 3px 1px;
+        border-radius: 0px 17px 71px 0px;
+    }
+
+    .filter>label {
+        display: flex;
+        flex-direction: row;
+        height: 7.4vh;
+        align-items: center;
+    }
+
+    .filter>label:hover {
+        text-shadow: 0px 0px 3px #f7fbff;
+
+    }
+
+    .filter>h2 {
+        font-size: 4.6vw;
+        text-align: center;
+    }
+
+    .filter>label>p {
+       width: 23.46vw;
+       font-size: 2.8vw;
+       font-family: 'Philosopher', sans-serif;
+    }
+
+    .filter>label>select {
+        width: 28vw;
+        background-color: #be61ff54;
+        border-radius: 10px;
+        padding: 0px 7px;
+        margin: 12px auto;
+        height: 5vw;
+        font-size: 2.2vw;
+    }
+
+    .filter>label>select:hover {
+        box-shadow: 0px 0px 3px 3px #3488d496;
     }
 }
-
-
-
-

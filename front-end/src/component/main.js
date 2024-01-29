@@ -5,11 +5,30 @@ import { Link } from "react-router-dom";
 
 const Main = () => {
   const token = localStorage.getItem("jwt");
+  const [isFilterVisible, setFilterVisibility] = useState(false);
   const [data, setData] = useState([]);
   const [show, setShow] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [item, setItem] = useState([]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const style = {
+    ...(windowWidth <= 600 && { top:`${scrollPosition}px` }),
+  };
+
+
+
+  
   const [filters, setFilters] = useState({
     roomType: "",
     roomFloor: "",
@@ -22,6 +41,11 @@ const Main = () => {
     city: "",
     expectedRent: "",
   });
+  // FUNCTION FOR CONTROL THE WORKING OF FIL-BTN
+  const toggleFilter = () => {
+    setFilterVisibility(!isFilterVisible);
+  };
+
 
   // Function to handle filter changes
   const handleFilterChange = (e) => {
@@ -208,6 +232,7 @@ const Main = () => {
     <div>
       <div className="wrapper">
         <div className="main">
+          <button onClick={(toggleFilter)} className="fil-btn"><span class="material-symbols-outlined">tune</span></button>
         {data.filter(applyFilters).length === 0 ? (
             // Display a message when no matching rooms are found
             <div className="no-matching-rooms-message">
@@ -297,7 +322,7 @@ const Main = () => {
           }))}
         </div>
         <div>
-          <div className="filter">
+          <div className={`filter ${isFilterVisible ? 'visible' : ''}`} style={style}>
           <h2 style={{fontFamily: 'Philosopher', margin:'2.8vh'}}>-- Apply Room Filter --</h2>
             <label><p>Room Type:</p><select name="roomType" onChange={handleFilterChange} value={filters.roomType}>
                 <option value="">All</option>
