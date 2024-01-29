@@ -1,14 +1,14 @@
-.profile{
+.profile {
     max-width: 1018px;
     margin: 10px auto;
 }
 
-.profile-frame{
+.profile-frame {
     display: flex;
     justify-content: space-evenly;
 }
 
-.profile-pic{
+.profile-pic {
     height: fit-content;
 }
 
@@ -30,30 +30,35 @@
     box-shadow: 0px 0px 26px -7px #58e9f8;
     border: 5px solid #620c66;
     border-radius: 100px;
-}  
+}
 
-.profile-data{
+.profile-data {
     text-align: left;
 }
-.profile-data>h1{
+
+.profile-data>h1 {
     font-size: 2.2vw;
 }
-.profile-info{
+
+.profile-info {
     padding: 0px 5px;
 }
-.profile-info>p{
+
+.profile-info>p {
     font-size: 1.2vw;
 }
-.title-h2{
+
+.title-h2 {
     font-size: 1.55vw;
 }
 
-.hr-tag{
+.hr-tag {
     opacity: 0.8;
     margin: 20px 77px;
 }
 
-#delete-btn{
+#delete-btn {
+    font-size: 1.1vw;
     width: 136px;
     padding: 1px 10px;
     background-color: #ee000069;
@@ -66,28 +71,49 @@
     border: 1px solid #89d3fe47;
     width: 57vw;
 }
-.gallery{
+
+.gallery {
     display: flex;
     justify-content: center;
 }
+#post-myacc{
+    width: 70vw;
+}
 
-@media (max-width:600px){
-    .profile-pic>img{
+@media (max-width:600px) {
+    #post-myacc{
+        width: 85vw;
+    }
+    .profile-pic>img {
         width: 13vw;
         height: 13vw;
     }
-    .profile-data>h1{
+
+    .profile-data>h1 {
         font-size: 4vw;
         margin: 0px;
     }
-    .profile-info>p{
+
+    .profile-info>p {
         font-size: 2.3vw;
     }
-    .title-h2{
+
+    .title-h2 {
         font-size: 2.7vw;
     }
-    .no-rooms-message{
+
+    .no-rooms-message {
         font-size: 2.4vw;
-        font-size: 2.4vw;
+    }
+
+    #delete-btn {
+        font-size: 0px;
+        height: 2.5vw;
+        width: 3vw;
+        padding: 1px 1vw;
+        background-color: #ee000069;
+    }
+    #post-myacc {
+        margin: 2vw 1.64vw 0px 1.64vw;
     }
 }

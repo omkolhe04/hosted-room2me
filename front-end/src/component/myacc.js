@@ -64,7 +64,7 @@ const Myacc = () => {
   }, [show]);
 
     useEffect(() => {
-                fetch('/myrooms', {
+                fetch('http://localhost:5000/myrooms', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -79,7 +79,7 @@ const Myacc = () => {
     const removeRoom=(roomId)=>{
       if(window.confirm("Do you want to delete the Room ?")){
 
-        fetch(`/deleteRoom/${roomId}`, {
+        fetch(`http://localhost:5000/deleteRoom/${roomId}`, {
           method:"delete",
           headers: {
               Authorization: `Bearer ${token}`
@@ -124,7 +124,7 @@ const Myacc = () => {
         ) : (
           myroom.map((myroom)=>{
                 return(
-                    <div className="post" >
+                    <div className="post" id="post-myacc" >
                     <div className="post-header">
                         <div className="post-pic">
                             <img src={postpic} alt="P" />
@@ -133,12 +133,8 @@ const Myacc = () => {
                             <h5>{myroom.postedBy.name}</h5>
                             <h5>- {myroom.city}</h5>
                         </div>
-                        <a className='post-button' id='delete-btn' onClick={()=>{removeRoom(myroom._id)}}><span class="material-symbols-outlined">
-delete
-</span> Delete Room</a>
-                        <a className="post-button" id="more" onClick={() => {toggleMore(myroom);}}><span class="material-symbols-outlined">
-expand_circle_right
-</span>More...</a>                        
+                        <a className='post-button' id='delete-btn' onClick={()=>{removeRoom(myroom._id)}}><span class="material-symbols-outlined">delete</span> Delete Room</a>
+                        <a className="post-button" id="more" onClick={() => {toggleMore(myroom);}}><span class="material-symbols-outlined">expand_circle_right</span>More...</a>                        
                     </div>
                     <div className='image-content'>
                         <div className="post-image">
@@ -147,7 +143,7 @@ expand_circle_right
                          )}
                         </div>
                         <div className="post-content">
-                            <h5 style={{fontSize:"18px", margin:"7px 0px"}}>- {myroom.roomType} on {myroom.roomFloor}</h5>
+                            <h5 >- {myroom.roomType} on {myroom.roomFloor}</h5>
                             <p>- Details: {myroom.numberOfRooms}, {myroom.numberOfKitchens}, {myroom.toiletAndBathroom}</p>
                             <p>- Electricity Bill will {myroom.electricityBills}</p>
                             <p>- Adress: {myroom.colony}, {myroom.area}, {myroom.landmark}, {myroom.city}</p>

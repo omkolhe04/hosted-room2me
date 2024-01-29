@@ -410,6 +410,7 @@
     #profile {
         width: 5vw;
     }
+    
 
 }
 
@@ -523,6 +524,8 @@
 
     .post {
         height: 75vw;
+        width: 85vw;
+        
     }
 
     .post-content {
@@ -530,7 +533,7 @@
     }
 
     .post-image img {
-        width: 83vw;
+        width: 82vw;
         margin: 8px 6px 0px 6px;
         height: 42vw;
     }

@@ -67,7 +67,7 @@ const UserProfile = () => {
   }, [show]);
     //FUNCTION FOR FETCH WISH API ---------------------
     const likePost = (id) => {
-      const responce = fetch("/wish", {
+      const responce = fetch("http://localhost:5000/wish", {
         method: "put",
         headers: {
           "Content-Type": "application/json",
@@ -93,7 +93,7 @@ const UserProfile = () => {
   
     //FUNCTION FOR FETCHING UNWISH API---------------------
     const unlikePost = (id) => {
-      fetch("/unwish", {
+      fetch("http://localhost:5000/unwish", {
         method: "put",
         headers: {
           "Content-Type": "application/json",
@@ -118,7 +118,7 @@ const UserProfile = () => {
     };
 
     useEffect(() => {
-                fetch(`/user/${userid}`, {
+                fetch(`http://localhost:5000/user/${userid}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -134,7 +134,7 @@ const UserProfile = () => {
     const removeRoom=(roomId)=>{
       if(window.confirm("Do you want to delete the Room ?")){
 
-        fetch(`/deleteRoom/${roomId}`, {
+        fetch(`http://localhost:5000/deleteRoom/${roomId}`, {
           method:"delete",
           headers: {
               Authorization: `Bearer ${token}`
@@ -175,7 +175,7 @@ const UserProfile = () => {
           </div>
         </div>
           <hr className="hr-tag" />
-          <h2 style={{textAlign:"center"}}>-- YOUR UPLOADED ROOMS --</h2>
+          <h2 className="title-h2" style={{textAlign:"center"}}>-- USER UPLOADED ROOMS --</h2>
         <div className="gallery">
             {myroom.map((myroom)=>{
                 return(
@@ -224,7 +224,7 @@ expand_circle_right
                          )}
                         </div>
                         <div className="post-content">
-                            <h5 style={{fontSize:"18px", margin:"7px 0px"}}>- {myroom.roomType} on {myroom.roomFloor}</h5>
+                            <h5>- {myroom.roomType} on {myroom.roomFloor}</h5>
                             <p>- Details: {myroom.numberOfRooms}, {myroom.numberOfKitchens}, {myroom.toiletAndBathroom}</p>
                             <p>- Electricity Bill will {myroom.electricityBills}</p>
                             <p>- Adress: {myroom.colony}, {myroom.area}, {myroom.landmark}, {myroom.city}</p>
