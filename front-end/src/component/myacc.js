@@ -64,7 +64,7 @@ const Myacc = () => {
   }, [show]);
 
     useEffect(() => {
-                fetch('http://localhost:5000/myrooms', {
+                fetch('/myrooms', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -79,7 +79,7 @@ const Myacc = () => {
     const removeRoom=(roomId)=>{
       if(window.confirm("Do you want to delete the Room ?")){
 
-        fetch(`http://localhost:5000/deleteRoom/${roomId}`, {
+        fetch(`/deleteRoom/${roomId}`, {
           method:"delete",
           headers: {
               Authorization: `Bearer ${token}`

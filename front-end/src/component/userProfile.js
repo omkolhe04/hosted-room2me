@@ -67,7 +67,7 @@ const UserProfile = () => {
   }, [show]);
     //FUNCTION FOR FETCH WISH API ---------------------
     const likePost = (id) => {
-      const responce = fetch("http://localhost:5000/wish", {
+      const responce = fetch("/wish", {
         method: "put",
         headers: {
           "Content-Type": "application/json",
@@ -93,7 +93,7 @@ const UserProfile = () => {
   
     //FUNCTION FOR FETCHING UNWISH API---------------------
     const unlikePost = (id) => {
-      fetch("http://localhost:5000/unwish", {
+      fetch("/unwish", {
         method: "put",
         headers: {
           "Content-Type": "application/json",
@@ -118,7 +118,7 @@ const UserProfile = () => {
     };
 
     useEffect(() => {
-                fetch(`http://localhost:5000/user/${userid}`, {
+                fetch(`/user/${userid}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -134,7 +134,7 @@ const UserProfile = () => {
     const removeRoom=(roomId)=>{
       if(window.confirm("Do you want to delete the Room ?")){
 
-        fetch(`http://localhost:5000/deleteRoom/${roomId}`, {
+        fetch(`/deleteRoom/${roomId}`, {
           method:"delete",
           headers: {
               Authorization: `Bearer ${token}`

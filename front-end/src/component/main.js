@@ -384,7 +384,6 @@ restart_alt
         <div className="more-section"    style={{ top: `${scrollPosition}px` }}>
           <div className="close-more" >
             <span
-              style={{ fontSize: "50px" }}
               class="material-symbols-outlined"
               onClick={()=>{toggleMore()}}
             >
@@ -411,14 +410,14 @@ restart_alt
                        <a className="post-button" id="message" onClick={handleButtonClick} >Message</a>
                         <Link className="post-button" id="location" to={`/profile/${item.postedBy._id}`}>Profile</Link>
                     </div>
-                    <h2 className="more-rent">RENT: {item.expectedRent}/-</h2>
+                    <h3 className="more-rent">RENT: {item.expectedRent}/-</h3>
                 </div>
                 </div>
             </div>
             <div style={{display:"flex", flexDirection:"row"}}>
             <div className="room-info">
               
-              <div style={{display:"flex",flexDirection:"row"}}>
+              <div id="room-info-mini">
                 <p>- Room Type : {item.roomType}</p>
                 <p>- Room Floor : {item.roomFloor}</p>
               </div>
