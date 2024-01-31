@@ -282,12 +282,11 @@ const AddRoom = () => {
             </div>
           </div>
           <div>
-            <button className="upload-button" style={{ margin: "30px 150px" }}>
+            <button className="upload-button" >
               Cancel All
             </button>
             <button
               className="upload-button"
-              style={{ margin: "30px 150px" }}
               onClick={handleSubmit}
             >
               Upload Room
