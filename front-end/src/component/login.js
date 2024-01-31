@@ -67,9 +67,6 @@ const Login = () => {
                <span className="fas fa-lock"></span>
                <label>Enter your Password</label>
             </div>
-            <div className="forgot-pass">
-               <a href="/nothing">Forgot Password?</a>
-            </div>
             <div className="sign-in-btn"><button onClick={handleLogin} >Sign in</button></div>
             <div className="sign-up">
                Not a member?

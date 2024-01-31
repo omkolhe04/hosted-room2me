@@ -127,3 +127,51 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
 .signup-now:hover{
   text-decoration: underline;
 }
+
+@media (max-width:600px) {
+  #container {
+    padding: 8vh 0px;
+    margin: 6vh 14vw;
+    height: 80vh;
+  }
+  .content{
+    width: 72vw;
+  }
+  
+}
+@media (max-width:400px) {
+  #container {
+    padding: 8vh 0px;
+    margin: 20vh 14vw;
+    height: 54vh;
+  }
+  .content{
+    width: 72vw;
+  }
+  .content .text{
+    font-size: 6vw;
+    margin-bottom: 12pxpx;
+  }
+  .field{
+    height: 4vh;
+  }
+  .field>input{
+    font-size: 4vw;
+  }
+  .field>span{
+    line-height: 5vh;
+  }
+  .field>label{
+    top: 60%;
+    font-size: 3.8vw;
+  }
+  .sign-in-btn>button{
+    width: 60%;
+    height: 4.5vh;
+    font-size: 4vw;
+    line-height: 0px;
+  }
+  .sign-up{
+    font-size: 4vw;
+  }
+}
