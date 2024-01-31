@@ -74,6 +74,7 @@
 
 .gallery {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 #post-myacc{
